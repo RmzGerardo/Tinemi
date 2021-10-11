@@ -1,0 +1,86 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+   .ejemplo{
+    background-color: #F9F640;
+    font-size: 10px;
+    color: #3D3D2C;
+   }
+      
+}
+
+@media (min-width: 600px) {
+    .ejemplo{
+        background-color: #EA8A11;
+        font-size: 10px;
+        color: #3D3D2C;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    background-color: #E8A11A;
+    font-size: 14px;
+    color: #3D3D2C;
+}
+
+
+@media (min-width: 768px) {
+    .ejemplo{
+        background-color: #C8F398;
+        font-size: 16px;
+        color: #3D3D2C;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    background-color: #C8F398;
+    font-size: 16px;
+    color: #3D3D2C;
+}
+
+
+@media (min-width: 992px) {
+    .ejemplo{
+    background-color: #0fc5e680;
+    font-size: 18px;
+    color: #FFFFFF;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    background-color: #98E5F3;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+
+@media (min-width: 1200px) {
+    .ejemplo{
+        background-color: #F41AC6;
+    font-size: 20px;
+    color: #FFFFFF;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .ejemplo{
+        background-color: #F41AC6;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    
+
+}
+
+.titulo{
+     color:rgb(12, 12, 129);
+}
+
+.parallax-container {
+    height: 400px;
+}
+
+.fondo{
+    background-color: #FFFFFF;
+}
