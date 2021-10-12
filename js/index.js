@@ -43,5 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $(".dropdown-trigger").dropdown();
 
 
-
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
        
