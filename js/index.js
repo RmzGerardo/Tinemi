@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
         height:300,
         interval:9000
     });
+
+    M.AutoInit();
+
+    
   });
       
   $(document).ready(function(){
@@ -26,4 +30,18 @@ document.addEventListener('DOMContentLoaded', function() {
   $(document).ready(function(){
     $('.modal').modal();
   });
+       
+
+  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+  $(".dropdown-trigger").dropdown();
+
+
+
        

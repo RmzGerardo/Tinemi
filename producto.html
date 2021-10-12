@@ -11,148 +11,264 @@
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/materialize/css/materialize.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+   
 </head>
 <body>
 
-    
-    <nav>
-        <div class="nav-wrapper blue">
-          <a href="index.html" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="producto.html">Productos</a></li>
-            <li><a href="collapsible.html">Mantenimiento</a></li>
-          </ul>
-        </div>
-      </nav>
+   
 
-      <div class="parallax-container">
-        <div class="parallax"><img src="assets/img/1.jpg    "></div>
-      </div>
-      <div class="section white">
-        <div class="row container">
-          <h2 class="header">Parallax</h2>
-          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+      
+    <nav class="nav-wrapper">
+        <div class="nav-wrapper red darken-3">
+            <a href="index.html" class="brand-logo">Logo</a>
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+            <li><a href="producto.html">Productos</a></li>
+            <li><a href="badges.html" id="contacto">Mantenimiento</a></li>
+            <li><a href="" >Contacto</a></li>
+            <!-- Dropdown Trigger -->
+            </ul>
         </div>
-      </div>
+    </nav>
+
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="producto.html">Productos</a></li>
+        <li><a href="badges.html">Mantenimiento</a></li>
+        <li><a href="badges.html">Contacto</a></li>
+    </ul>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/img/1.jpg    "></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header fuente">Parallax</h2>
+            <p class="grey-text text-darken-3 lighten-3 fp">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        </div>
+    </div>
+
+
     <div class="container">
+
         <div class="row">
             <div class="col s12 section center-align">
-                <h1 class="blue-text">Productos</h1>
+                <h1 class="black-text text-darken-2 fuente">Productos</h1>
             </div>
+
+            <div class="row">
+                <div class="col s12 divider"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="card col l6 m6 s6">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/img/1.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p class="fp">Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+
+                <div class="card col col l6 m6 s6">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/img/1.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 section center-align">
+                    <h1 class="black-text text-darken-2 fuente">Productos #2</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 divider"></div>
+            </div>
+
+            <div class="row">
+                <div class="card col l4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/img/1.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+
+                <div class="card col l4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/img/1.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+
+                <div class="card col l4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/img/1.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 section center-align">
+                    <h1 class="black-text text-darken-2 fuente">Productos #3</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 divider"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="card col l4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/img/1.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+
+                <div class="card col l4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/img/1.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+
+                <div class="card col l4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/img/1.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+                    
+            
+            
+
+
         </div>
 
 
-        <div class="row">
-    <div class="col s12 m6">
-      <div class="card pink">
-        <div class="card-content white-text">
-          <span class="card-title">Electro</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+
+        <ul class="pagination center">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="producto.html">1</a></li>
+            <li class="waves-effect active"><a href="producto copy.html">2</a></li>
+            
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+        
+
+        
+
+
+            
+    </div> 
+
+    <footer class="page-footer red darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">TINEMI</h5>
+              <p class="grey-text text-lighten-4">Desarrollo En Sistemas Digitales Y De Control S.A. De C.V</p>
+            </div>
+          </div>
+          <div class="row center">
+              <div class="col l4 m4 s4">
+                  <a href="https://www.instagram.com/" target="blank_"><img class="responsive-img" src="assets/img/instagram (1).png" alt=""></a>
+              </div>
+              <div class="col l4 m4 s4">
+                <a href="https://web.whatsapp.com/" target="blank_"><img class="responsive-img" src="assets/img/whatsapp.png" alt=""></a>
+            </div>
+            <div class="col l4 m4 s4">
+                <a href="https://es-la.facebook.com/" target="blank_"><img class="responsive-img" src="assets/img/facebook.png" alt=""></a>
+            </div>
+          </div>
         </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
+        <div class="footer-copyright  grey darken-3">
+          <div class="container">
+          © 2014 Copyright Devs Friends
+          <a class="grey-text text-lighten-4 right" href="#!">Octubre 2021</a>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </footer>
 
-        <div class="row">
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content ">
-                <span class="card-title activator grey-text text-darken-4">Electro<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Características generales:
-                    Protocolos de tratamiento predefinidos individuales o combinados.
-                    Programas libres para la definición de parámetros de usuario en cada una de las modalidades de emisión.
-                    Posibilidad de poner en secuencia programas referidos a la misma modalidad.
-                    Programas predefinidos para las patologías más comunes.
-                    Sencillez de manejo: la selección de los parámetros se efectúa mediante un dial.
-                    Pantalla LCD de fácil lectura controlado por un microprocesador de software integrado.
-                    Protocolos</p>
-                </div>
-            </div>
+    
+    
 
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
+     
 
-        <div class="row">
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
-
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
-
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
+    
+   
 </body>
 </html>

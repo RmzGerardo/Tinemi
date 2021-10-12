@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="js/jquery.js"></script>
@@ -12,57 +12,72 @@
     <link rel="stylesheet" href="css/materialize/css/materialize.min.css" />
     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="">
+<body>
 
-    <nav>
-        <div class="nav-wrapper blue">
-          <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+      
+        <nav class="nav-wrapper">
+            <div class="nav-wrapper grey darken-4">
+            <a href="index.html" class="brand-logo">Logo</a>
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="badges.html" id="contacto">Mantenimiento</a></li>
+                <li><a href="" >Contacto</a></li>
+                <!-- Dropdown Trigger -->
+            </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="menu-responsive">
             <li><a href="producto.html">Productos</a></li>
-            <li><a href="collapsible.html">Mantenimiento</a></li>
-          </ul>
-        </div>
-      </nav>
+            <li><a href="badges.html">Mantenimiento</a></li>
+            <li><a href="badges.html">Contacto</a></li>
+        </ul>
 
-      <div class="parallax-container">
-        <div class="parallax"><img src="assets/img/1.jpg    "></div>
-      </div>
-      <div class="section white">
-        <div class="row container">
-          <h2 class="header">Parallax</h2>
-          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        <div class="parallax-container">
+            <div class="parallax"><img src="assets/img/1.jpg    "></div>
         </div>
-      </div>
+        <div class="section white">
+            <div class="row container">
+            <h2 class="header fuente black-text text-darken-2">Parallax</h2>
+            <p class="grey-text  fp">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+        </div>
 
 
 
     <div class="container">
 
         
-      <div class="card-panel">
-        <p class="blue-text text-darken-2">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
-          dolorem possimus atque asperiores eveniet ipsam blanditiis excepturi
-          quod? Odio maxime doloremque maiores veniam est labore dolores dolorum
-          voluptas qui voluptatem.
-        </p>
-      </div>
-
-
-      <div class="row">
-        <div class="col s12 section center-align">
-            <h1 class="black-text">Servicios</h1>
+        <div class="card-panel">
+            <p class="grey-text fp">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            dolorem possimus atque asperiores eveniet ipsam blanditiis excepturi
+            quod? Odio maxime doloremque maiores veniam est labore dolores dolorum
+            voluptas qui voluptatem.
+            </p>
         </div>
-    </div>
+
+
+        <div class="row">
+            <div class="col s12 section center-align">
+                <h1 class="black-text text-darken-2 fuente">Servicios</h1>
+            </div>
+        </div>
 
     
         
         <div class="row center-align section">
             <div class="col s12 m4">
                 <i class="large material-icons yellow circle">business_center</i>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                <p class="fp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
                     dolorem possimus atque asperiores eveniet ipsam blanditiis excepturi
                     quod? Odio maxime doloremque maiores veniam est labore dolores dolorum
                     voluptas qui voluptatem.
@@ -71,7 +86,7 @@
 
             <div class="col s12 m4">
                 <i class="large material-icons yellow circle">business_center</i>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                <p class="fp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
                     dolorem possimus atque asperiores eveniet ipsam blanditiis excepturi
                     quod? Odio maxime doloremque maiores veniam est labore dolores dolorum
                     voluptas qui voluptatem.</p>
@@ -79,7 +94,7 @@
 
             <div class="col s12 m4">
                 <i class="large material-icons yellow circle">business_center</i>
-                <p class="left-align">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                <p class="fp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
                     dolorem possimus atque asperiores eveniet ipsam blanditiis excepturi
                     quod? Odio maxime doloremque maiores veniam est labore dolores dolorum
                     voluptas qui voluptatem.</p>
@@ -87,216 +102,155 @@
             
         </div>
 
-      <div class="carousel">
-        <a class="carousel-item " href="#one!"><img width="200" src="https://lorempixel.com/250/250/nature/1"></a>
-        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-        <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-      </div>
+        <div class="carousel">
+            <a class="carousel-item " href="#one!"><img width="200" src="https://lorempixel.com/250/250/nature/1"></a>
+            <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+            <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+            <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+        </div>
 
-      <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-            <div class="caption center-align">
-              <h3>This is our big Tagline!</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        <div class="slider">
+            <ul class="slides">
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            </ul>
+        </div>
+
+        <div div class="row center section">
+        
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
             </div>
-          </li>
-          <li>
-            <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-            <div class="caption left-align">
-              <h3>Left Aligned Caption</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-          </li>
-          <li>
-            <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-            <div class="caption right-align">
-              <h3>Right Aligned Caption</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-          </li>
-          <li>
-            <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-            <div class="caption center-align">
-              <h3>This is our big Tagline!</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-          </li>
-        </ul>
-      </div>
+        </div>
+
 
         <div class="row">
             <div class="col s12 divider"></div>
         </div>
         
-        <!-- <div class="row">
-            <div class="col s12 section center-align">
-                <h1 class="blue-text">Productos</h1>
-            </div>
-        </div>
+        
 
 
-        <div class="row">
-    <div class="col s12 m6">
-      <div class="card pink">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-        <div class="row">
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content ">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
-
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
-
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
-
-            <div class="card col s6">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/1.jpg">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div> -->
-
-        <div class="row">
-            <div class="col s12 divider"></div>
-        </div>
-        <blockquote>
+        <blockquote class="fp">
             This is an example quotation that uses the blockquote tag.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
           dolorem possimus atque asperiores eveniet ipsam blanditiis excepturi
           quod? Odio maxime doloremque maiores veniam est labore dolores dolorum
           voluptas qui voluptatem.
           </blockquote>
+
+          <div class="row">
+            <div class="col s12 section center-align contacto" ">
+                <h1 class="black-text">Contacto </h1>
+            </div>
+        </div>
+    
+        
+
+        <div class="row center-align">
+            <div class="col m6 s6 fp">
+                <i class="medium material-icons">call_end</i>
+                <p class="left-align">TELEFONO: 5587982.</p>
+                <p class="left-align">MAIL: dnekjfndiw@gmail.com.</p>
+                <p class="left-align">DIRECCION: Heriberto Frias 203.</p>
+            </div>
+            <div class="col m6 s6 fp">
+                <i class="medium material-icons">help</i>
+                <p class="left-align"> Si quieres Atencion personalizada, puedes mandarnos mensaje a nuestro WhatsApp para poder ayudarte con lo que necesites.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col m12 center fp">
+                <i class="medium material-icons">face</i>
+                <p> Cuando compres un equipo. No se te olvide pedir tu factura o ticket. Para tener un comprobante y reclamar tu garantia en caso de</p>
+            </div>
+            
+        </div>
+    
           
     </div>
 
 
-    
-    <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+<!-- boton flotante -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red" href="https://www.instagram.com/" target="blank_"><i class="material-icons">instagram</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+      </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-      
-    </div>
-
-    <footer class="page-footer">
+<!-- Footer -->
+    <footer class="page-footer grey darken-4 fp">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              <h5 class="white-text">TINEMI</h5>
+              <p class="grey-text text-lighten-4">Desarrollo En Sistemas Digitales Y De Control S.A. De C.V</p>
             </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-              </ul>
+          </div>
+          <div class="row center">
+              <div class="col l4 m4 s4">
+                  <a href="https://www.instagram.com/"><img class="responsive-img" src="assets/img/instagram (1).png" alt=""></a>
+              </div>
+              <div class="col l4 m4 s4">
+                <a href="https://web.whatsapp.com/"><img class="responsive-img" src="assets/img/whatsapp.png" alt=""></a>
+            </div>
+            <div class="col l4 m4 s4">
+                <a href="https://es-la.facebook.com/"><img class="responsive-img" src="assets/img/facebook.png" alt=""></a>
             </div>
           </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright  grey darken-3">
           <div class="container">
           © 2014 Copyright Devs Friends
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          <a class="grey-text text-lighten-4 right" href="#!">Octubre 2021</a>
           </div>
         </div>
-      </footer>
-  </body>
+    </footer>
+
+
+</body>
 </html>
