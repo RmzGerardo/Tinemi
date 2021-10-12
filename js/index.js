@@ -46,4 +46,14 @@ document.addEventListener('DOMContentLoaded', function() {
   $(document).ready(function(){
     $('.tabs').tabs();
   });
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+	const imgLightBox = document.querySelectorAll('.materialboxed');
+	M.Materialbox.init(imgLightBox, {
+		inDuration: 500,
+		outDuration: 500
+	});
+});
        
